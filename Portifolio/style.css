@@ -1,0 +1,769 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    transition: 0.3s;
+}
+
+body {
+    background-color: black;
+    color: white;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.typewrite{
+    color:#A64A84;
+     text-decoration: none;
+}
+
+header {
+    width: 650px;
+    height: 90px;
+    background-color: black;
+    border: 3px solid #88165E;
+    border-radius: 50px;
+    position: fixed;
+    top: 35px;
+     z-index: 1000;
+}
+
+header ul {
+
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+}
+
+header li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.img {
+
+    width: 45px;
+    height: 45px;
+
+    object-fit: contain;
+}
+
+
+
+.apresentacao,
+.sobre,
+.habilidades,
+.projetos {
+
+    width: 90%;
+    border: 3px solid #88165E;
+    border-radius: 50px;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.quadrinho{
+    position: absolute;
+    width: 600px;
+    height: 690px;
+    right: 0;
+    bottom: -140px;
+    border: 2px solid #88165E;
+    border-radius: 30px;
+
+}
+
+.quadrinho img{
+    width: 596px;
+    height: 686px;
+    border-radius: 30px;
+    object-fit: cover;
+}
+
+
+.apresentacao {
+
+    height: 90vh;
+    margin-top: 180px;
+    justify-content: center;
+    align-items: flex-start;
+    padding-left: 10%;
+}
+
+.apresentacao-conteudo {
+
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    color: #88165E;
+    position: relative;
+}
+
+.subtitulo {
+
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.apresentacao h1 {
+
+    font-size: 75px;
+    letter-spacing: 3px;
+}
+
+.texto-apresentacao {
+
+    width: 500px;
+    color: white;
+    font-size: 21px;
+    margin-top: 30px;
+}
+
+.botao {
+
+    margin-top: 35px;
+    padding: 14px 30px;
+    border: 2px solid #88165E;
+    border-radius: 40px;
+    color: #A64A84;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.botao:hover {
+
+    background-color: #88165E;
+    color: white;
+}
+
+
+
+.sobre {
+
+    height: 85vh;
+    margin-top: 100vh;
+    justify-content: flex-start;
+    padding-top: 70px;
+}
+
+.titulo {
+    margin-top: 60px;
+    color: #88165E;
+    font-size: 55px;
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+.sobre-conteudo {
+
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
+}
+
+.sobre-texto {
+
+    width: 50%;
+    color: white;
+    font-size: 20px;
+}
+
+.sobre-texto p {
+
+    margin-bottom: 25px;
+}
+
+.sobre-quadrado {
+
+    width: 40%;
+    height: 260px;
+    border: 2px solid #88165E;
+    border-radius: 30px;
+    padding: 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.sobre-quadrado h2 {
+
+    color: #88165E;
+    margin-bottom: 25px;
+}
+
+.sobre-quadrado p {
+
+    color: white;
+    font-size: 18px;
+}
+
+
+
+.habilidades {
+
+    height: 130vh;
+    margin-top: 100vh;
+    padding-top: 70px;
+
+}
+
+.habilidades-conteudo {
+
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 35px;
+}
+
+.habilidade {
+
+    width: 30%;
+    height: 210px;
+    border: 2px solid #88165E;
+    border-radius: 30px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.habilidade img{
+    width: 90px;
+    height: 90px;
+}
+
+.habilidade h2 {
+
+    color: white;
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.habilidade p {
+
+    color: white;
+    font-size: 17px;
+}
+
+
+
+
+
+.projetos {
+
+    height: 150vh;
+    margin-top: 100vh;
+    padding-top: 70px;
+}
+
+.projetos-conteudo {
+
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.projeto {
+
+    width: 45%;
+    height: 280px;
+    border: 2px solid #88165E;
+    border-radius: 30px;
+    padding: 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.projeto h2 {
+
+    color: #88165E;
+    font-size: 25px;
+}
+
+.projeto p {
+
+    color: white;
+    font-size: 18px;
+}
+
+.projeto button {
+
+    width: 180px;
+    padding: 12px;
+    border: 2px solid #88165E;
+    border-radius: 30px;
+    background-color: black;
+    color: #A64A84;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.projeto button:hover {
+
+    background-color: #88165E;
+    color: white;
+}
+
+
+
+.contato {
+
+    width: 90%;
+    margin-top: 100vh;
+    color: #88165E;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contatos-conteudo {
+
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.contato-item {
+
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.contato-item img {
+
+    width: 60px;
+    height: 60px;
+}
+
+.contato-item h2 {
+
+    font-size: 20px;
+    margin-bottom: 8px;
+}
+
+.contato-item p {
+
+    color: white;
+    font-size: 17px;
+}
+
+
+.projetos-titulo {
+
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+
+.github {
+
+    width: 80%;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.github img {
+
+    width: 65px;
+    height: 65px;
+}
+
+.github h2 {
+
+    font-size: 20px;
+    margin-bottom: 8px;
+}
+
+.git {
+
+    color: white;
+    text-decoration: none;
+}
+
+
+
+.form {
+
+    width: 80%;
+    min-height: 650px;
+    margin-top: 100px;
+    border: 3px solid #88165E;
+    border-radius: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
+}
+
+.form h2 {
+
+    color: #88165E;
+    margin-bottom: 40px;
+}
+
+.form input {
+
+    width: 70%;
+    height: 55px;
+    margin-bottom: 25px;
+    padding: 15px;
+    background-color: black;
+    border: 2px solid #88165E;
+    border-radius: 30px;
+    color: white;
+    outline: none;
+}
+
+.form .mensagem {
+
+    height: 150px;
+    border-radius: 25px;
+}
+
+.form button {
+
+    width: 180px;
+    height: 50px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 30px;
+    background-color: #88165E;
+    color: white;
+
+}
+
+
+
+.rodape {
+
+    width: 80%;
+   height: 130px;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    border: 3px solid #88165E;
+    border-radius: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.rodape h2 {
+
+    color: #88165E;
+    font-size: 20px;
+}
+
+.rodape p {
+
+    color: white;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.modal img{
+    width: 980px;
+    height: 500px;
+    object-fit: cover;
+}
+
+
+.modal {    
+
+    width: 1100px;
+    padding: 45px;
+    border: 3px solid #88165E;
+    border-radius: 35px;
+    background-color: black;
+    color: white;
+    margin: auto;
+}
+
+.modoclaro {
+
+    position: fixed;
+    width: 75px;
+    height: 75px;
+    left: 30px;
+    top: 35px;
+    border-radius: 50%;
+    background-color: black;
+    border: 3px solid #88165E;
+    z-index: 1000;
+}
+
+.modoclaro img {
+    width: 45px;
+    height: 45px;
+}
+
+.check {
+    display: none;
+}
+
+.modo-claro {
+    background-color: #f5f5f5;
+    color: #222;
+}
+
+.modo-claro header {
+    background-color: white;
+}
+
+.modo-claro .apresentacao,
+.modo-claro .sobre,
+.modo-claro .habilidades,
+.modo-claro .projetos {
+    background-color: white;
+}
+
+.modo-claro .texto-apresentacao,
+.modo-claro .sobre-texto,
+.modo-claro .sobre-quadrado p,
+.modo-claro .habilidade p,
+.modo-claro .projeto p,
+.modo-claro .contato-item p,
+.modo-claro .git,
+.modo-claro .rodape p {
+    color: #333;
+}
+
+.modo-claro .habilidade,
+.modo-claro .projeto,
+.modo-claro .sobre-quadrado,
+.modo-claro .form,
+.modo-claro .rodape 
+.modo-claro .modoclaro{
+    background-color: #fafafa;
+}
+
+.modo-claro .form input {
+    background-color: white;
+    color: #222;
+}
+
+.modo-claro .projeto button {
+    background-color: white;
+    color: #88165E;
+}
+
+.modo-claro .modal {
+    background-color: white;
+    color: #222;
+}
+
+.modo-claro .habilidade h2{
+    color: #88165E;
+}
+
+.slider {
+    width: 80%;
+    overflow: hidden;
+}
+
+.slider-conteudo {
+    display: flex;
+    transition: 1.2s;
+}
+
+.slide-habilidades {
+    min-width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 35px;
+}
+
+.slide-habilidades .habilidade {
+    width: 30%;
+    height: 210px;
+    flex-shrink: 0;
+}
+
+.botoes-slider {
+    display: flex;
+    gap: 30px;
+    margin-top: 35px;
+}
+
+.botoes-slider button {
+    width: 55px;
+    height: 55px;
+    border: 2px solid #88165E;
+    border-radius: 50%;
+    background-color: black;
+    color: #88165E;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.botoes-slider button:hover {
+    background-color: #88165E;
+    color: white;
+}
+
+.modo-claro .botoes-slider button {
+    background-color: white;
+    color: #88165E;
+}
+
+.slider-soft {
+    margin-top: 0;
+}
+
+.slider-soft-conteudo {
+    display: flex;
+    transition: 1.2s;
+}   
+
+@media (max-width: 768px) {
+
+    header {
+        width: 90%;
+        height: 60px;
+    }
+
+    .quadrinho{
+        width: 202px;
+        margin-bottom: -100px;
+        height: 202px;
+        transform: translate(-50% 50%);
+        margin-right: 50px;
+    }
+
+    .quadrinho img{
+        height: 198px;
+        width: 198px;
+    }
+
+    .img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .modoclaro {
+        width: 55px;
+        height: 55px;
+        left: 15px;
+        top: 100px;
+    }
+
+    .apresentacao
+    {
+        height: 870px;
+    }
+    .apresentacao,
+    .sobre,
+    .habilidades,
+    .projetos {
+        width: 95%;
+    }
+
+    .apresentacao h1 {
+        font-size: 45px;
+    }
+
+    .texto-apresentacao {
+        width: 90%;
+        font-size: 17px;
+    }
+
+
+
+    .titulo {
+        font-size: 35px;
+    }
+
+    .sobre-conteudo {
+        width: 90%;
+        flex-direction: column;
+    }
+
+    .sobre{
+        height: 100vh;
+    }
+
+    .sobre-texto {
+        width: 100%;
+        font-size: 17px;
+    }
+
+    .sobre-quadrado {
+        width: 100%;
+    }
+
+    .slide-habilidades .habilidade {
+        width: 30%;
+        height: 180px;
+        padding: 10px;
+    }
+
+    .habilidade h2 {
+        font-size: 10px;
+    }
+
+    .habilidade img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .projetos-conteudo {
+        width: 90%;
+        flex-direction: column;
+    }
+
+    .projeto {
+        width: 100%;
+    }
+
+    .projetos{
+        height: 255vh;
+    }
+
+    .contatos-conteudo,
+    .github,
+    .form,
+    .rodape {
+        width: 90%;
+    }
+
+    .form input {
+        width: 100%;
+    }
+
+    .modal {
+        width: 90%;
+    }
+
+
+}
+
+
+
